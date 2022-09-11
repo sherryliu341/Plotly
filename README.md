@@ -163,10 +163,6 @@ Your bar chart should look like the following image:
 **Code and Image**
 
 
-````java
-// COLUMBIA ENGINEERING 
-// By Emmanuel Martinez
-// Module 12
 
 
 // DELIVERABLE 1: Create a Horizontal Bar Chart
@@ -228,7 +224,7 @@ function buildMetadata(sample) {
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/1.1.JPG?raw=true)
+![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/1.1.jpg)
 
 
 
