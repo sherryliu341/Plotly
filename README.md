@@ -61,7 +61,7 @@ Behind the scenes, an iterative process similar to a `for` loop takes place. The
 
 Try running the code in your browser console and view the results for doubled. You should see the following:
 
-![name-of-you-image](https://github.com/sherryliu/Plotly/blob/main/Images/s1.png?raw=true)
+![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/s1.png?raw=true)
 
 
 ## The filter() Method
