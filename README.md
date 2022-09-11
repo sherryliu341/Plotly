@@ -137,9 +137,6 @@ In this example, the `slice()` method returns the first two elements of the `int
 ### Deliverable Requirements:
 Using your knowledge of JavaScript, Plotly, and D3.js, create a horizontal bar chart to display the top 10 bacterial species (OTUs) when an individual’s ID is selected from the dropdown menu on the webpage. The horizontal bar chart will display the `sample_values` as the values, the `otu_ids` as the labels, and the `otu_labels` as the hover text for the bars on the chart.
 
-Your bar chart should look like the following image:
-
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/s2.png?raw=true)
 
 
 
@@ -230,7 +227,7 @@ function buildMetadata(sample) {
 
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/1.1.JPG?raw=true)
+
 
 
 
@@ -302,7 +299,6 @@ function buildCharts(sample) {
     }];
 ````
 
-![name-of-you-image](https://github.com/sherryliyu341/Plotly/blob/main/Images/1.2.JPG?raw=true)
 
 
 
@@ -323,7 +319,6 @@ function buildCharts(sample) {
     Plotly.newPlot("bar", barData, barLayout);
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/1.3.JPG?raw=true)
 
 
 
@@ -444,7 +439,7 @@ function buildCharts(sample) {
     Plotly.newPlot("bar", barData, barLayout);
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/1.4.JPG?raw=true)
+
 
 
 
@@ -460,9 +455,9 @@ Using your knowledge of JavaScript, Plotly, and D3.js, create a bubble chart tha
 - The `otu_ids` as the marker colors.
 - The `otu_labels` as the hover-text values.
 
-Your bubble chart should look like the following image:
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/s3.png?raw=true)
+
+
 
 
 
@@ -479,64 +474,6 @@ Your bubble chart should look like the following image:
 3. ​When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard. All three charts should also be working according to their requirements when a sample is selected from the dropdown menu
 
  
-### Results with detail analysis:
-
-1. **The code for the trace object in the `buildCharts()`; function does the following:**
-    - Sets the `otu_ids` as the x-axis values
-    - Sets the `sample_values` as the y-axis values
-    - Sets the `otu_labels` as the hover-text values
-    - Sets the `sample_values` as the marker size
-    - Sets the `otu_ids` as the marker colors
-
-
-> Image with `JavaScript` & `HTML` Code below.
-
-**Code and Image**
-
-
-````java
-// 1. Create the trace for the bubble chart.
-    var bubbleData = [{
-      x: ids,
-      y: bubbleValues,
-      text: bubbleLabels,
-      mode: "markers",
-       marker: {
-         size: bubbleValues,
-         color: bubbleValues,
-         colorscale: "Portland" 
-       }
-    }];
-
-````
-
-
-
-
-
-2. **The code for the layout in the `buildCharts()`; function does the following:**
-    - Creates a title
-    - Creates a label for the x-axis
-    - The text for a bubble is shown when hovered over.
-
-
-> Image with `JavaScript` & `HTML` Code below.
-
-**Code and Image**
-
-
-````java
-// 2. Create the layout for the bubble chart.
-    var bubbleLayout = {
-        title: "Bacteria Cultures Per Sample",
-        xaxis: {title: "OTU ID"},
-        automargin: true,
-        hovermode: "closest"
-    };
-````
-
-
-
 
 
 3. ​**When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard. All three charts should also be working according to their requirements when a sample is selected from the dropdown menu.**
@@ -578,152 +515,6 @@ Your gauge chart should look similar to the following image:
 2. When the webpage loads, the bar and bubble chart are working according to the requirements in Deliverable 1 and 2, respectively, and the gauge chart is working according to the requirements listed for this Deliverable
 
  
-### Results with detail analysis:
-
-1. **The code to build the gauge chart does the following:**
-    - Creates a title for the chart.
-    - Creates the ranges for the gauge in increments of two, with a different color for each increment.
-    - Adds the washing frequency value on the gauge chart.
-    - The indicator shows the level for the washing frequency on the gauge.
-    - The gauge is added to the dashboard.
-    - The gauge fits in the margin of the `<div>` element.
-
-
-> Image with `JavaScript` & `HTML` Code below.
-
-**Code and Image**
-
-
-````java
-// 1. Create a variable that filters the metadata array for the object with the desired sample number.
-    var metadata = data.metadata;
-    var gaugeArray = metadata.filter(metaObj => metaObj.id == sample);  
-
-    // 2. Create a variable that holds the first sample in the metadata array.
-        var gaugeResult = gaugeArray[0];
-
-    // 3. Create a variable that holds the washing frequency.  
-    var wfreqs = gaugeResult.wfreq;
-    console.log(wfreqs)
-
-    // 4. Create the trace for the gauge chart.
-    var gaugeData = [{
-      value: wfreqs,
-      type: "indicator",
-      mode: "gauge+number",
-      title: {text: "<b> Belly Button Washing Frequency </b> <br></br> Scrubs Per Week"},
-      gauge: {
-        axis: {range: [null,10], dtick: "2"},
-
-        bar: {color: "black"},
-        steps:[
-          {range: [0, 2], color: "red"},
-          {range: [2, 4], color: "orange"},
-          {range: [4, 6], color: "yellow"},
-          {range: [6, 8], color: "lightgreen"},
-          {range: [8, 10], color: "green"}
-        ],
-        dtick: 2
-      }
-    }];
-    
-    // 5. Create the layout for the gauge chart.
-    var gaugeLayout = { 
-     automargin: true
-    };
-
-    // 6. Use Plotly to plot the gauge data and layout.
-    Plotly.newPlot("gauge", gaugeData, gaugeLayout)
-  });
-}
-
-````
-> HTML Code
-````html
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-
-````
-
-
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/3.1.JPG?raw=true)
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/3.1.1.JPG?raw=true)
-
-
-
-2. **When the webpage loads, the bar and bubble chart are working according to the requirements in Deliverable 1 and 2, respectively, and the gauge chart is working according to the requirements listed for this Deliverable**
-
-
-> Image with `JavaScript` & `HTML` Code below.
-
-**Code and Image**
-
-
-````html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bellybutton Biodiversity</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-  </head>
-
-<body>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./JS/charts.js"></script>
-
-
-</body>
-
-</html>
-````
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/3.2.JPG?raw=true)
-
 
 
 
@@ -784,8 +575,6 @@ body {
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/4.1.JPG?raw=true)
-
 
 
 2. **When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and the three charts should be working according to their requirements.**
@@ -795,20 +584,7 @@ body {
 > Image with `JavaScript` & `HTML` Code below.
 
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/4.2.JPG?raw=true)
 
-
-
-3. ​**​When a sample is selected, the dashboard should display the data in the panel and all three charts according to their requirements.**
-
-> Page Fully Responsive
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/4.3.JPG?raw=true)
-
-
-> Please visit the Site below to intercat with the Data!
-
-[`Belly Button Biodiversity Dashboard`](https://emmanuelmartinezs.github.io/Plotly). 
 
 
 
