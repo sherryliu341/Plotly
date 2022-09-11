@@ -6,9 +6,16 @@
 2. ***Deliverable 2***: Create a Bubble Chart
 3. ***Deliverable 3***: Create a Gauge Chart
 4. ***Deliverable 4***: Customize the Dashboard
-5. ***Deliverable 5***: A written report on the Belly Button Biodiversity Dashboard analysis [`README.md`](https://github.com/sherryliu341/Plotly/). 
+5. ***Deliverable 5***: A written report on the Belly Button Biodiversity Dashboard analysis [`README.md`](https://github.com/sherryliu341/Ploty/). 
 
+## Resources and Before Start Notes:
 
+* Data Source: `BellyButton_bar_chart_starter_code.js`, `BellyButton_bubble_chart_starter_code.js`, `BellyButton_bubble_chart_starter_code.js` and `index.html`
+* Data Tools: ECMAScript, JavaScript, JSON and IO (Web Server)
+* Software: ES6+, ECMAScript and Visual Studio Code 1.50.0
+
+For more information, read the [`Documentation on Plotly.js Basic Charts`](https://plotly.com/javascript/basic-charts/). 
+And for more information, read the [`CORS Documentation`](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). 
 
 ## Overview of ES6+
 ECMAScript, also referred to as "ES," is a scripting language designed to help standardize JavaScript. This means that ES provides guidelines and rules for JavaScript to follow, such as how a function should be created to run correctly, also known as the **proper syntax**.
@@ -52,7 +59,9 @@ Here, the `map()` function becomes a method of the `numbers` array. It then take
 
 Behind the scenes, an iterative process similar to a `for` loop takes place. The anonymous function takes in each integer of the `numbers` array and doubles it. Finally, the variable `doubled` is an array of integers whose values are twice their original values.
 
+Try running the code in your browser console and view the results for doubled. You should see the following:
 
+![name-of-you-image](https://github.com/sherryliu/Plotly/blob/main/Images/s1.png?raw=true)
 
 
 ## The filter() Method
@@ -130,7 +139,7 @@ Using your knowledge of JavaScript, Plotly, and D3.js, create a horizontal bar c
 
 Your bar chart should look like the following image:
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Resources/Images/s2.png?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/s2.png?raw=true)
 
 
 
@@ -156,6 +165,10 @@ Your bar chart should look like the following image:
 **Code and Image**
 
 
+````java
+// COLUMBIA ENGINEERING 
+// By Emmanuel Martinez
+// Module 12
 
 
 // DELIVERABLE 1: Create a Horizontal Bar Chart
@@ -217,7 +230,7 @@ function buildMetadata(sample) {
 
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/1.1.jpg)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/1.1.JPG?raw=true)
 
 
 
@@ -289,7 +302,7 @@ function buildCharts(sample) {
     }];
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Resources/Images/1.2.JPG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/1.2.JPG?raw=true)
 
 
 
@@ -310,7 +323,7 @@ function buildCharts(sample) {
     Plotly.newPlot("bar", barData, barLayout);
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Resources/Images/1.3.JPG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/1.3.JPG?raw=true)
 
 
 
@@ -431,7 +444,7 @@ function buildCharts(sample) {
     Plotly.newPlot("bar", barData, barLayout);
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Resources/Images/1.4.JPG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/1.4.JPG?raw=true)
 
 
 
@@ -449,7 +462,7 @@ Using your knowledge of JavaScript, Plotly, and D3.js, create a bubble chart tha
 
 Your bubble chart should look like the following image:
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/s3.png?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/s3.png?raw=true)
 
 
 
@@ -497,7 +510,7 @@ Your bubble chart should look like the following image:
 
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/2.1.jpg)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/2.1.JPG?raw=true)
 
 
 
@@ -539,7 +552,7 @@ Your bubble chart should look like the following image:
     Plotly.newPlot("bubble", bubbleData, bubbleLayout)
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/2.3.jpg)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/2.3.JPG?raw=true)
 
 
 
@@ -551,7 +564,7 @@ Using your knowledge of JavaScript, Plotly, and D3.js, create a gauge chart that
 
 Your gauge chart should look similar to the following image:
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/s4.png)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/s4.png?raw=true)
 
 
 
@@ -635,9 +648,9 @@ Your gauge chart should look similar to the following image:
 
 
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/3.1.1.jpg)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/3.1.JPG?raw=true)
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/3.1.jpg)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/3.1.1.JPG?raw=true)
 
 
 
@@ -709,7 +722,7 @@ Your gauge chart should look similar to the following image:
 </html>
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Resources/Images/3.2.JPG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/3.2.JPG?raw=true)
 
 
 
@@ -771,12 +784,31 @@ body {
 
 ````
 
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/4.1.JPG?raw=true)
 
 
 
+2. **When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and the three charts should be working according to their requirements.**
 
 
 
+> Image with `JavaScript` & `HTML` Code below.
+
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/4.2.JPG?raw=true)
+
+
+
+3. ​**​When a sample is selected, the dashboard should display the data in the panel and all three charts according to their requirements.**
+
+> Page Fully Responsive
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/4.3.JPG?raw=true)
+
+
+> Please visit the Site below to intercat with the Data!
+
+[`Belly Button Biodiversity Dashboard`](https://emmanuelmartinezs.github.io/Plotly). 
 
 
 
