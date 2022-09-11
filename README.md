@@ -510,7 +510,7 @@ Your bubble chart should look like the following image:
 
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/2.1.JPG?raw=true)
+
 
 
 
@@ -535,7 +535,7 @@ Your bubble chart should look like the following image:
     };
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/2.2.JPG?raw=true)
+
 
 
 
@@ -552,7 +552,7 @@ Your bubble chart should look like the following image:
     Plotly.newPlot("bubble", bubbleData, bubbleLayout)
 ````
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/2.3.JPG?raw=true)
+
 
 
 
@@ -564,7 +564,7 @@ Using your knowledge of JavaScript, Plotly, and D3.js, create a gauge chart that
 
 Your gauge chart should look similar to the following image:
 
-![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Images/s4.png?raw=true)
+
 
 
 
