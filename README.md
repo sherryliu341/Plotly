@@ -8,14 +8,7 @@
 4. ***Deliverable 4***: Customize the Dashboard
 5. ***Deliverable 5***: A written report on the Belly Button Biodiversity Dashboard analysis [`README.md`](https://github.com/sherryliu341/Plotly/). 
 
-## Resources and Before Start Notes:
 
-* Data Source: `BellyButton_bar_chart_starter_code.js`, `BellyButton_bubble_chart_starter_code.js`, `BellyButton_bubble_chart_starter_code.js` and `index.html`
-* Data Tools: ECMAScript, JavaScript, JSON and IO (Web Server)
-* Software: ES6+, ECMAScript and Visual Studio Code 1.50.0
-
-For more information, read the [`Documentation on Plotly.js Basic Charts`](https://plotly.com/javascript/basic-charts/). 
-And for more information, read the [`CORS Documentation`](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). 
 
 ## Overview of ES6+
 ECMAScript, also referred to as "ES," is a scripting language designed to help standardize JavaScript. This means that ES provides guidelines and rules for JavaScript to follow, such as how a function should be created to run correctly, also known as the **proper syntax**.
@@ -716,7 +709,7 @@ Your gauge chart should look similar to the following image:
 </html>
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/3.2.JPG?raw=true)
+![name-of-you-image](https://github.com/sherryliu341/Plotly/blob/main/Resources/Images/3.2.JPG?raw=true)
 
 
 
@@ -778,7 +771,6 @@ body {
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Plotly/blob/main/Resources/Images/4.1.JPG?raw=true)
 
 
 
